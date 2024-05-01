@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "Tiara Arunissa" && password === "ayamgoreng") {
+                alert("Selamat datang!");
+            } else {
+                alert("Username atau password salah!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <label for="username">Username:</label>
+    <input type="text" id="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password"><br><br>
+    <button onclick="checkLogin()">Login</button>
+</body>
+</html>
